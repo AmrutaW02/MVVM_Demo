@@ -13,6 +13,16 @@
 		790452E5279FD95600912143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790452E3279FD95600912143 /* Main.storyboard */; };
 		790452E7279FD95600912143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790452E6279FD95600912143 /* Assets.xcassets */; };
 		790452EA279FD95600912143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790452E8279FD95600912143 /* LaunchScreen.storyboard */; };
+		790452F4279FDE2300912143 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790452F3279FDE2300912143 /* APICall.swift */; };
+		790452F8279FDFC300912143 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790452F7279FDFC300912143 /* LogHelper.swift */; };
+		790452FB279FE4A600912143 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790452FA279FE4A600912143 /* ListViewController.swift */; };
+		790452FF279FF79C00912143 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790452FE279FF79C00912143 /* ListViewModel.swift */; };
+		79045301279FF85D00912143 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79045300279FF85D00912143 /* Observable.swift */; };
+		7904530327A0008D00912143 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904530227A0008D00912143 /* ListModel.swift */; };
+		7904530727A008F100912143 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904530527A008F100912143 /* ListCell.swift */; };
+		7904530827A008F100912143 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7904530627A008F100912143 /* ListCell.xib */; };
+		7904530B27A0161B00912143 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904530A27A0161B00912143 /* UIImage+Extension.swift */; };
+		7904530D27A0180300912143 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904530C27A0180300912143 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		790452E6279FD95600912143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790452E9279FD95600912143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790452EB279FD95600912143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		790452F3279FDE2300912143 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		790452F7279FDFC300912143 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
+		790452FA279FE4A600912143 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		790452FE279FF79C00912143 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		79045300279FF85D00912143 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		7904530227A0008D00912143 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		7904530527A008F100912143 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		7904530627A008F100912143 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		7904530A27A0161B00912143 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		7904530C27A0180300912143 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,10 @@
 		790452DC279FD95600912143 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				790452FD279FE4BA00912143 /* ViewModel */,
+				790452FC279FE4B300912143 /* Model */,
+				790452F9279FE48500912143 /* Controller */,
+				790452F1279FDE0100912143 /* Helper */,
 				790452DD279FD95600912143 /* AppDelegate.swift */,
 				790452DF279FD95600912143 /* SceneDelegate.swift */,
 				790452E1279FD95600912143 /* ViewController.swift */,
@@ -65,6 +89,76 @@
 				790452EB279FD95600912143 /* Info.plist */,
 			);
 			path = Assignment;
+			sourceTree = "<group>";
+		};
+		790452F1279FDE0100912143 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7904530927A0160D00912143 /* Extension */,
+				790452F6279FDFB900912143 /* Library */,
+				790452F2279FDE1500912143 /* APICall */,
+				79045300279FF85D00912143 /* Observable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		790452F2279FDE1500912143 /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				790452F3279FDE2300912143 /* APICall.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		790452F6279FDFB900912143 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				790452F7279FDFC300912143 /* LogHelper.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		790452F9279FE48500912143 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7904530427A008C900912143 /* View */,
+				790452FA279FE4A600912143 /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		790452FC279FE4B300912143 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7904530227A0008D00912143 /* ListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		790452FD279FE4BA00912143 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				790452FE279FF79C00912143 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7904530427A008C900912143 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7904530527A008F100912143 /* ListCell.swift */,
+				7904530627A008F100912143 /* ListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7904530927A0160D00912143 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7904530A27A0161B00912143 /* UIImage+Extension.swift */,
+				7904530C27A0180300912143 /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				790452EA279FD95600912143 /* LaunchScreen.storyboard in Resources */,
+				7904530827A008F100912143 /* ListCell.xib in Resources */,
 				790452E7279FD95600912143 /* Assets.xcassets in Resources */,
 				790452E5279FD95600912143 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +232,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7904530327A0008D00912143 /* ListModel.swift in Sources */,
+				79045301279FF85D00912143 /* Observable.swift in Sources */,
 				790452E2279FD95600912143 /* ViewController.swift in Sources */,
+				7904530727A008F100912143 /* ListCell.swift in Sources */,
+				790452F8279FDFC300912143 /* LogHelper.swift in Sources */,
+				790452FB279FE4A600912143 /* ListViewController.swift in Sources */,
+				7904530D27A0180300912143 /* UIView+Extension.swift in Sources */,
+				790452FF279FF79C00912143 /* ListViewModel.swift in Sources */,
 				790452DE279FD95600912143 /* AppDelegate.swift in Sources */,
+				790452F4279FDE2300912143 /* APICall.swift in Sources */,
+				7904530B27A0161B00912143 /* UIImage+Extension.swift in Sources */,
 				790452E0279FD95600912143 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
